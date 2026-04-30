@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./fonts/OpenSans_Condensed-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F7F3F0;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 2% auto;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header a {
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #C74817;
+}
+
+.bee {
+    width: 250px;
+    height: auto;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.button-contact {
+    background-color: #D3A863;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+.button-contact:hover {
+    background-color: #b88a3a;
+    transform: scale(1.05);
+}
+
+/* ===== MAIN BLOCK ===== */
+.general-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.text p:first-child {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.text h1 {
+    font-size: 5em;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.text p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.view {
+    background-color: #C74817;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.view:hover {
+    background-color: #D3A863;
+    transform: scale(1.05);
+}
+
+.general-image {
+    flex: 1;
+    position: relative;
+    min-width: 280px;
+    text-align: center;
+}
+
+.general-image img:first-child {
+    width: 80%;
+    max-width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.general-image img:last-child {
+    width: 90%;
+    max-width: 400px;
+    margin-top: -50px;
+}
+
+/* ===== NEWS SECTION ===== */
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.center-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.center-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-text {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.right-text h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right-text p {
+    color: #C74817;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: 15px 0 5px;
+}
+
+.right-text h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.right-text h5 {
+    font-weight: lighter;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ===== MISSION SECTION ===== */
+.bottom-text {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.bottom-text h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Увеличил заголовок */
+}
+
+.bottom-text h5 {
+    font-weight: normal; /* Сделал чуть жирнее для читаемости */
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #444;
+    font-size: 1.2em; /* Увеличил основной текст с ~14px до ~19px */
+}
+
+.bottom-text h5 strong {
+    color: #C74817; /* Выделил важный текст цветом */
+}
+
+/* ===== PRODUCTS SECTION ===== */
+.center-text {
+    text-align: center;
+    margin: 60px auto;
+    padding: 0 20px;
+    max-width: 700px;
+}
+
+.center-text h1 {
+    margin-bottom: 15px;
+}
+
+.center-text h5 {
+    font-weight: lighter;
+    color: #666;
+    line-height: 1.6;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.product {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-description {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-description h3 {
+    color: #C74817;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.product-description p {
+    color: #666;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.add-to-cart {
+    background-color: transparent;
+    color: #C74817;
+    border: 2px solid #C74817;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #C74817;
+    color: white;
+}
+
+/* ===== REVIEW SECTION ===== */
+.review-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 60px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.review-photo {
+    flex-shrink: 0;
+}
+
+.review-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-text {
+    flex: 1;
+}
+
+.review-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.review-text p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ===== GALLERY ===== */
+.title-container {
+    text-align: center;
+    margin: 60px auto 30px;
+    padding: 0 20px;
+    max-width: 700px;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.collage-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collage-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.collage-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== SUBSCRIBE ===== */
+.subscribe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+    flex: 1;
+    min-width: 280px;
+}
+
+.text-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.subscribe-form button {
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid #C74817;
+    color: #C74817;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.subscribe-form button:hover {
+    background-color: #C74817;
+    color: white;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== TYPES OF HONEY ===== */
+.title-block {
+    text-align: center;
+    margin: 60px auto 30px;
+    padding: 0 20px;
+}
+
+.title-block h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: #C74817;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.product-card a:hover {
+    color: #D3A863;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+/* Планшеты */
+@media (max-width: 1024px) {
+    .general-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text h1 {
+        font-size: 4em;
+    }
+    
+    .news {
+        flex-direction: column;
+    }
+    
+    .review-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .header-actions {
+        justify-content: center;
+    }
+    
+    .text h1 {
+        font-size: 2.5em;
+    }
+    
+    .text p {
+        font-size: 0.9em;
+    }
+    
+    .view, .button-contact {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product {
+        max-width: 100%;
+    }
+    
+    .collage-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .collage-item img {
+        height: 200px;
+    }
+    
+    .subscribe-container {
+        padding: 25px;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+    }
+    
+    .review-photo img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .right-text {
+        padding: 15px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bottom-text h2, .center-text h1, .title-container h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Очень маленькие устройства */
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 2em;
+    }
+    
+    .general-block {
+        margin: 30px auto;
+    }
+    
+    .bottom-text h5 {
+        font-size: 0.85em;
+    }
+    
+    .product-description h2 {
+        font-size: 1.2em;
+    }
+    
+    .title-block h2 {
+        font-size: 1.8em;
+    }
+}
